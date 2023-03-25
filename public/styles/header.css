@@ -1,0 +1,160 @@
+#mainHeader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+
+    background-color: rgb(23, 23, 28);
+
+    display: flex;
+
+    box-sizing: border-box;
+}
+
+/*       links       */
+
+.leftSection{
+    display: flex;
+    align-items: center ;
+    width: 300px;
+    margin-left: 13px;
+}
+
+.amazonLogo{
+    height: 50px;
+    margin-right: 35px;
+    border:transparent 1px solid;
+}
+
+.amazonLogo:hover,
+.welcome:hover{
+  border:white 1px solid;
+}
+
+.standortIcons{
+    height: 18px;
+    margin-top: 8px;
+    color: white;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 5px 5px;
+    border:transparent 1px solid;
+}
+
+.hello{
+    color: rgb(211, 209, 209);
+    font-size: 13px;
+}
+
+.adresse{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*   middle section    */
+
+.middleSection{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-left: 5px;
+    width:1fr;
+    margin-right: 20px;
+    flex-grow: 1;
+}
+
+select{
+    appearance: none;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+
+}
+
+:root {
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+.categories{
+    width: 42px;
+    height: 22px;
+    border-radius:3px 0 0 3px;
+    padding:8px 9px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(232, 232, 232);
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+}
+
+.categories::after {
+    content: "";
+    width: 8px;
+    height: 4px;
+    background-color: black;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    justify-self: end;
+}
+
+select,
+.categories:after {
+    grid-area: select;
+}
+
+input{
+    width: 0;
+}
+
+.search-div{
+    min-width: 0;
+}
+
+.search-bar{
+    height: 35px;
+    border-left-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-width: 1px;
+    margin: 0;
+    flex: 1;
+}
+
+.search-button{
+    background-color: rgb(238, 194, 48);
+    width: 44px;
+    height: 38px;
+    border-radius: 0 3px 3px 0;
+    border: none;
+}
+
+.search-icon{
+    height: 27px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+/* right section    */
+
+.rightSection{
+    display: flex;
+    align-items: center;
+
+    background-color: pink;
+    width: 410px ;
+    
+}

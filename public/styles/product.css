@@ -1,0 +1,143 @@
+*{
+
+}
+
+.secondaryNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    padding-bottom: 7px;
+    column-gap: 10px;
+    font-size: 13px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    background-color: rgb(253, 253, 253);
+}
+
+.secondaryNav a {
+    text-decoration: none;
+    color: black;
+}
+
+#product{
+    margin-top: 10px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 38px 1fr  275px ;
+    column-gap: 30px;
+}
+
+.picdiv{
+    width: 38px;
+    height: 50px;
+    background-color: gray;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    float: left;
+}
+
+.pics{
+    border: solid 1px rgb(160, 160, 160);
+    border-radius: 5px;
+}
+
+.pics img{
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width:100%;
+}
+
+.pics:hover{
+    border-color: orange;
+    box-shadow: 0 0 0;
+}
+
+.item{
+    display: flex;
+    column-gap: 30px;
+    margin-right: 5px;
+}
+
+.productPic{
+    width: 100%;
+    flex: 3;
+    flex-grow: 2;
+    min-width: 200px;
+    max-width: 325px;
+}
+
+.textContainer{
+    min-width: 370px;
+    max-width: 705px;
+    padding-top: 5px;
+}
+
+.description{
+    font-size: 27px;
+}
+
+.buy{
+    width: 275px;
+    height: 250px;
+    border: 1px solid rgb(0, 119, 255);
+    border-radius: 5px;
+    float: left;
+    padding: 10px 20px;
+    margin-left: -45px;
+}
+
+.price{
+    font-size: 25px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.used{
+    font-size: 15px;
+}
+
+.available{
+    font-size: 22px;
+    color: rgb(14, 115, 14);
+    margin-bottom: 5px;
+}
+
+select .buy{
+    background-color: rgb(200, 200, 200) ;
+}
+
+
+.btnFlex{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btnFlex .button{
+    width: 235px;
+    height: 29px;
+    border-radius: 15px;
+    border: none;
+    font-size: 13px;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.cart{
+    background-color: rgba(255, 234, 0, 0.939);
+}
+
+.buyNow{
+    background-color: rgb(252, 165, 3);
+}
+
