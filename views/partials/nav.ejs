@@ -1,17 +1,14 @@
 <html lang="en">
 <link rel="stylesheet" href="/styles/nav-bar.css">
 
-<body>
-
     <nav class="main-nav">
 
         <div class="menu">
-            <img src="icons/hamburger-menu.svg" alt="">
+            <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="">
             <div style="margin-left:3px">Alle</div>
-            <div class="bar">
-
-            </div>
         </div>
+        
+        <%- include("./hamburgermenu.ejs") %>
 
         <div class="nav-categories-box">
             <div class="nav-categories">Bestselle</div>
@@ -19,7 +16,12 @@
             <div class="nav-categories">Angebote</div>
             <div class="nav-categories">Neuerscheinungen</div>
             <div class="nav-categories">Kundenservice</div>
-        <!--<div class="nav-categories">Prime Video</div>  --> 
+            <div class="nav-categories">Prime Video</div>  
+            <div class="nav-categories">Musik</div>  
+            <div class="nav-categories">Prime</div>  
+            <div class="nav-categories">Audible</div>  
+            <div class="nav-categories">Bücher</div>
+            <div class="nav-categories">Games</div>    
         </div>
 
         <div class="nav-right">
@@ -28,6 +30,11 @@
 
     </nav>
 
-    <script src="../..//navScript.js"></script>
-</body>
+    <script>
+        const menuDiv =  document.querySelector(".menu");
+        menuDiv.addEventListener("click", ()=>{
+            menuDiv.classList.toggle("is-active")
+        });
+    </script>
+
 </html>

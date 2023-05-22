@@ -11,10 +11,12 @@
     </head>
 
     <body>
-        <%- include("./partials/head.ejs") %>
+         <%- include("./partials/head.ejs") %>
 
 
-        <%- include("./partials/nav.ejs") %>
+         <%- include("./partials/nav.ejs") %> 
+
+
             
             <main class="main">
 
@@ -22,13 +24,14 @@
                     
                     <div class="pic-div">
                         <img class="pic" src="images/bg.jpg" alt="">
+                        <div class="arrow1"> 
+                            &lt;
+                        </div>
+                        <div class="arrow2">
+                            &gt;
+                        </div>
                     </div>
-                    <div class="arrow1"> 
-                        &lt;
-                    </div>
-                    <div class="arrow2">
-                        &gt;
-                    </div>
+                    
                     
                 </section>
 
@@ -107,13 +110,252 @@
                     </section>
                     
                     <section class="bestseller">
-                        <div>Bestseller Bücher</div>
+                        <div class="container-headings">Bestseller in Bücher</div>
+                        <div class="bestseller-container">
+                            <button class="container-arrow1"> 
+                                &lt;
+                            </button>
+                            <button class="container-arrow2">
+                                &gt;
+                            </button>
+                            <img class="buch" src="images/buch1.jpg" alt="">
+                            <img class="buch"  src="images/buch2.jpg" alt="">
+                            <img class="buch"  src="images/buch3.jpg" alt="">
+                            <img class="buch"  src="images/buch4.jpg" alt="">
+                            <img class="buch"  src="images/buch5.jpg" alt="">
+                            <img class="buch"  src="images/buch6.jpg" alt="">
+                        </div>
+                    </section>
+
+                    <section class="banner-sec">
+                        <img class="banner" src="images/banner.jpg" alt="">
+                    </section>
+
+                    <section class="shirt-section">
+                        <div class="container-headings">Besondere Artikel, nur für dich gedruckt</div>
+                        <div class="container-link">Mehr entdecken</div>
+                        <div class="shirt-container">
+                            <button class="container-arrow1"> 
+                                &lt;
+                            </button>
+                            <button class="container-arrow2">
+                                &gt;
+                            </button>
+                            <img src="images/shirt1.jpg" alt="">
+                            <img src="images/shirt2.jpg" alt="">
+                            <img src="images/shirt3.jpg" alt="">
+                            <img src="images/shirt4.jpg" alt="">
+                            <img src="images/shirt5.jpg" alt="">
+                        </div>
+                    </section>
+
+                    <section class="bottom-anmelde-section">
+                        <div class="bottom-button-div">
+                            <div>
+                                <div class="bottom-upper-button-text">Personalisierte Empfehlungen anzeigen</div>
+                                <button class="bottom-anmelde-button">Anmelden</button>
+                                <div class="bottom-bottom-buton-text">Neuer Kunde?<span style="color: rgb(67, 126, 128);"> Starten Sie hier.</span> </div>
+                            </div>
+                        </div>
+                    </section>
+
+                
+                    <div class="Seitenanfang-button">
+                        <a href="#mainHeader">Zurück zum Seitenanfang</a>
+                    </div>
+                   
+
+                <footer id="main-footer">
+                    <section class="link-container">
+                        <div class="link-container-items">
+                            <div class="footer-heading">Über Amazon</div>
+                            <div class="fotter-container-link">Karriere bei<br> Amazon</div>
+                            <div class="fotter-container-link">Pressemitteilungen</div>
+                            <div class="fotter-container-link">Über uns</div>
+                            <div class="fotter-container-link">Unternehmensblog<br> Day One</div>
+                        </div>
+                        <div class="link-container-items">
+                            <div class="footer-heading"> Geld verdienen mit Amazon</div>
+                            <div class="fotter-container-link">Jetzt verkaufen</div>
+                            <div class="fotter-container-link">Verkaufen bei Amazon<br> Handmade</div>
+                            <div class="fotter-container-link">Partnerprogramm</div>
+                            <div class="fotter-container-link">Versand durch Amazon</div>
+                            <div class="fotter-container-link">Prime durch Verkäufer</div>
+                        </div>
+                        <div class="link-container-items">
+                            <div class="footer-heading">Amazon-Zahlungsarten</div>
+                            <div class="fotter-container-link">Einkaufen mit Punkten</div>
+                            <div class="fotter-container-link">Amazon Business Amex<br> Card</div>
+                            <div class="fotter-container-link">Kreditkarten</div>
+                            <div class="fotter-container-link">Gutscheine</div>
+                        </div>
+                        <div class="link-container-items">
+                            <div class="footer-heading">Wir helfen dir</div>
+                            <div class="fotter-container-link">Amazon und<br> COVID-19</div>
+                            <div class="fotter-container-link">Lieferung verfolgen<br> oder Bestellung<br> anzeigen</div>
+                            <div class="fotter-container-link">Versand & <br>Verfügbarkeit</div>
+                            <div class="fotter-container-link">Amazon Prime</div>
+                            <div class="fotter-container-link">Rückgabe & Ersatz</div>
+                            <div class="fotter-container-link">Recycling<br> (einschließlich<br> Entsorgung von<br> Elektro- &<br> Elektronikaltgeräten)</div>
+                            <div class="fotter-container-link">Verträge kündigen</div>
+                        </div>
+                    </section>
+
+                    <section class="footer-chooser">
+                        <div>
+                            <img class="footer-image" src="images/amazon-logo.png" alt="">
+                        </div>
+                        <div>
+                            <select name="language" id="language-chooser">
+                                <option value="DE">DE</option>
+                                <option value="ENG">ENG</option>
+                                <option value="SP">SP</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="country-button">Deustchland</button>
+                        </div>
+                    </section>
+
+                    <section class="bottom-footer">
 
                     </section>
+
+                </footer>
+
                 </div>
             </main>
 
+            <script>
+                const bar = document.querySelector(".bar");
+                const div = document.querySelector(".menu");
+                const body = document.querySelector("body")
+                const lis = document.querySelectorAll(".categorie");
+                const barCategories = document.querySelector(".barCategories");
 
+
+                div.addEventListener("click", (e)=> {
+                    e.stopPropagation();
+                    if(!bar.classList.contains("visible")){
+                        bar.classList.add("visible");
+                        body.classList.add("bar-open");
+                    }
+                    
+                    
+                })
+
+                body.addEventListener("click",()=> {
+                    if(bar.classList.contains("visible")){
+                        bar.classList.remove("visible");
+                        body.classList.remove("bar-open");
+                    }
+                })
+
+                const addEvents = ()=> {
+                    lis.forEach(li =>li.addEventListener("click", (e) =>{
+                        e.stopPropagation();
+                        const cat = li.dataset.categorie; 
+                        console.log(cat)
+                        switch(cat){
+                            case "book":
+                                    showCategories();
+                                break;
+                        }
+
+                    }));
+                }
+                addEvents();
+
+
+                const showCategories = () => {
+                    barCategories.innerHTML =`
+                                        <ul>
+                                        <li><div class="mainMenu">Hauptmenü</div></li>
+                                        <li><div class="heading">Bücher</div></li>
+                                        <li class="categorie"><a href="">Alles Bücher</a></li>
+                                        <li class="categorie"><a href="">Kindle ebooks</a></li>
+                                        <li class="categorie"><a href="">Fachbücher</a></li>
+                                        
+                                        <li><div class="heading">Audible Hörbücher</div></li>
+                                        <li class="categorie"><a href="">Audible-Abo</a></li>
+                                        <li class="categorie"><a href="">Alle Audible Hörbücher</a></li>
+                                        </ul>
+                                        `;
+                    funcMain();
+                    
+                }
+
+                const funcMain = () =>{
+                    mainMenu = document.querySelector(".mainMenu");
+                    mainMenu.addEventListener("click", ()=> {
+                        backToMain();
+                    })
+                }
+
+
+                const backToMain = () => {
+                    barCategories.innerHTML=`<ul>
+                    <li><div class="heading">Im Trend</div></li>
+                    <li class="categorie"><a href="">Bestseller</a></li>
+                    <li class="categorie"><a href="">Nererscheinung</a></li>
+                    <li class="categorie"><a href="">Aufsteiger des Tages</a></li>
+
+                    <li><div class="heading">Digitale Inhalte & Geräte</div></li>
+                    <li class="categorie"><a href="">Amazon Music</a></li>
+                    <li class="categorie"><a href="">Prime Video</a></li>
+                    <li class="categorie"><a href="">Fire TV </a></li>
+                
+                    <li><div class="heading">Alle Kategorien</div></li>
+                    <li class="categorie" data-categorie="book"><a href="">Bücher</a></li>
+                    <li class="categorie"><a href="">File, Serien, Musik & Games</a></li>
+                    <li class="categorie"><a href=""></a>Elektronik & Computer</li>
+                    <li class="categorie"><a href="">Sport & Freizeit</a></li>
+                    <li class="categorie"><a href="">Auto, Motorrad & Gewerbe</a></li>
+
+
+
+                    <li><div class="heading">Programme & Funktionen</div></li>
+                    <li class="categorie"><a href="">Handmade </a></li>
+                    <li class="categorie"><a href="">Luxury Store</a></li>
+                    <li class="categorie"><a href="">Amazon Outlet</a></li>
+
+                    <li><div class="heading">Hilfe & Einstellungen</div></li>
+                    <li class="categorie"><a href="">Mein Konto</a></li>
+                    <li class="categorie"><a href="">Sprache</a></li>
+                    <li class="categorie"><a href="">Anmelden</a></li>
+
+                    </ul>
+                    `;
+                    addEvents();
+                }
+
+               
+
+
+
+
+                // test
+        // const searchButton = document.querySelector("search-button");
+        
+
+        
+        // //searching for items
+        // const searchItem = searchBar.value;
+        // searchButton.addEventListener("click", () => {
+        //     console.log("click")
+        // })
+      
+        // const searchBar = document.querySelector("input");
+
+        // let input = searchBar.value; 
+       
+        // searchBar.addEventListener("change", ()=> {
+        //     fetch(`/items/${input}`)
+        //      .then((response) => response.json())
+        //      .then((json) => console.log(json));
+        // })
+
+        </script>
     </body>
 
 

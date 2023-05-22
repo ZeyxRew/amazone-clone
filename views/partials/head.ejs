@@ -1,12 +1,14 @@
 <link rel="stylesheet" href="/styles/header.css">
+<link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
+
 
 <header id="mainHeader">
                 
     <div class="leftSection">
 
-        <img class="amazonLogo" src="/images/amazon-logo.png" alt="">
+        <img class="amazonLogo" src="images/amazon-logo.png" alt="">
         <div class="welcome">
-            <div><img class="standortIcons" src="/icons/standort.png" alt=""></div>
+            <div><img class="standortIcons" src="icons/standort.png" alt=""></div>
             <div>
                 <div class="hello">Hello</div>
                 <div class="adresse">Lieferadresse wählen</div>
@@ -27,17 +29,61 @@
             <span class="focus"></span>
 
         </div>
-        <div class="search-div">
+        <form class="search-form">
             <input class="search-bar" type="text">
-        </div>
+        </form>
         <button class="search-button">
-            <img class="search-icon" src="../../icons/search.svg" alt="">
+            <img class="search-icon" src="icons/search.svg" alt="">
         </button>
 
     </div>
 
     <div class="rightSection">
-
+        <div class="header-language">
+            <img class="flagge" src="images/flagge.jpg" alt="">
+            <div>
+                DE
+            </div>
+        </div>
+        <div class="header-anmelden">
+            <div>Hallo, anmelden</div>
+            <div class="bold-sub">Konto und Listen</div>
+        </div>
+        <div class="Warenrücksendung">
+            <div>Warenrücksendung</div>
+            <div class="bold-sub">und Bestellung</div>
+        </div>
+        <div class="cart">
+            <div class="cart-image-div">
+                <img class="cart-image" src="icons/cart-11-32.png" alt="">
+                <div class="cart-num">0</div>
+            </div>
+            <div>Einkaufs-<br><span class="bold-sub">wagen</span></div>
+        </div>
     </div>
-
+    
 </header>
+
+    <script>
+        // const ItemRoutes = require("../../routes/itemRoutes");
+        // const searchBar = document.querySelector(".search-bar");
+        // const searchButton = document.querySelector(".search-button");
+        // console.log("mooooolll")
+
+        // searchButton.disabled= false;
+        // //searching for items
+        // const searchItem = searchBar.value;
+        // searchButton.addEventListener("click", () => {
+        //     console.log("click")
+        // })
+        // setup();
+
+
+        //change event for input--search for items
+        const searchBar = document.querySelector("input");
+
+        searchBar.addEventListener("change", ()=> {
+            console.log("click")
+        })
+
+    </script>

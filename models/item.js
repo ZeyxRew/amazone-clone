@@ -1,4 +1,4 @@
-const mongoose = require("mongoos");
+const mongoose = require("mongoose");   
 const Schema = mongoose.Schema;
 
 const itemSchema= new Schema({
@@ -7,7 +7,7 @@ const itemSchema= new Schema({
         required: true
     },
     price:{
-        type: double,
+        type: Number,
         require: true
     },
     description:{
@@ -19,10 +19,14 @@ const itemSchema= new Schema({
         required: true
     },
     rating:{
-        type: double,
+        type: Number,
         required: true
-    }
+    },
+    categories:{
+        type: String,
+        required: true
+    },
 },{timestamps:true});
 
-const Item = mongoose.model("Item",itemSchema);
+const Item = mongoose.model("Item", itemSchema);
 module.exports = Item;
